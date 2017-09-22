@@ -39,6 +39,8 @@ const firstTruthy=function(s1, s2, s3){
 		return s1;
 	if(!!s2===true)
 		return s2;
-	return s3;
+	if(!!s3===true)
+		return s3;
+	return "There is no truthy value";
 };
 	
